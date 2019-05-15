@@ -1,0 +1,36 @@
+.iconRol{
+	font-size: 12px;
+	padding: 3px;
+	color: #FFFFFF;
+	border-radius: 3px;
+}
+
+.iconRol.iconRolDanger{
+	background: #F44336;
+}
+
+.iconRol.iconRolSuccess{
+	background-color: #009688;
+}
+
+
+.imgUserModal{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.imgBackgroundShowUser{
+	margin-top: -30px !important;
+	display: block;
+
+}
+
+#validateKeyStrength{
+	float: right;
+	font-size: 12px;
+}
+
+#validateKeyStrength:hover{
+	cursor: default;
+}

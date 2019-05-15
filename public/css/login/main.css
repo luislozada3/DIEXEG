@@ -1,0 +1,238 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing:border-box;  
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    font-family: Roboto-Regular;
+    src: url(../../fonts/roboto/Roboto-Regular.ttf);
+}
+
+body {
+    background-color: #0747A6;
+    color: #FFFFFF;
+    font-family: Roboto-Regular, 'Arial';
+}
+
+.modalLoading{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modalLoading > .loginMessage{
+    border-radius: 2px;
+    background: #FFFFFF;
+    width: 450px;
+    text-align: center;
+    color: black;
+    padding: 8px 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.modalLoading .loginMessage > img,
+.modalLoading .loginMessage > h3{
+    display: inline-block;
+}
+
+.modalLoading .loginMessage > img{
+    width: 100px;
+    position: relative;
+}
+
+.modalLoading .loginMessage > h3{
+    position: relative;
+    top: -30px;
+    left: -30px;
+}
+
+.contentLogin{
+    width: 40%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 55px 10px;
+}
+
+.contentLogin .logo{
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.contentLogin .logo > h1{
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0px 0px 2px white;
+}
+
+.contentLogin .caption{
+    font-family: Roboto-Regular, 'Arial';
+    margin-top: 48px;
+    margin-bottom: 48px;    
+}
+.contentLogin .caption > h1{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-style: inherit;
+    text-align: center;
+    color: rgba(255,255,255,0.85);
+}
+
+section.main {
+    background: #FFFFFF;
+    border-radius: 3px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    color: #172B4D;
+    padding: 48px;
+    margin-bottom: 48px;
+}
+
+section.main .formLogin,
+section.main .formRecover{
+    width: 100%;
+}
+
+section.main .formLogin .groupInput .captionLogin,
+section.main .formRecover .groupInput .captionLogin{
+    text-align: center;
+    font-family: Roboto-Regular, 'Arial';
+    font-size: 17px;
+    color:#42A5F5;
+}
+
+section.main .formLogin .groupInput .captionLogin span,
+section.main .formRecover .groupInput .captionLogin span{
+    background: rgba(248,80,50,1);
+    background: -moz-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,132,0,1) 76%, rgba(232,155,21,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(76%, rgba(255,132,0,1)), color-stop(100%, rgba(232,155,21,1)));
+    background: -webkit-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,132,0,1) 76%, rgba(232,155,21,1) 100%);
+    background: -o-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,132,0,1) 76%, rgba(232,155,21,1) 100%);
+    background: -ms-linear-gradient(left, rgba(248,80,50,1) 0%, rgba(255,132,0,1) 76%, rgba(232,155,21,1) 100%);
+    background: linear-gradient(to right, rgba(248,80,50,1) 0%, rgba(255,132,0,1) 76%, rgba(232,155,21,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;    
+    -webkit-text-fill-color: transparent;
+    color: tomatos;
+    font-weight: 400;
+    /* font-weight: bold; */
+}
+
+section.main .formLogin > .groupInput,
+section.main .formRecover > .groupInput{
+    position: relative;
+    width: 100%;
+    padding: 15px 0px;
+}
+
+section.main .formLogin .groupInput > input,
+section.main .formRecover .groupInput > input{
+    width: 100%;
+    padding: 11px 8px;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    outline: none;
+    color: #424242;
+    -webkit-transition: border-color ease 0.5s;
+    -o-transition: border-color ease 0.5s;
+    -moz-transition: border-color ease 0.5s;
+    -ms-transition: border-color ease 0.5s;
+    transition: border-color ease 0.5s;
+}
+
+span.textHelp{
+    color: red;
+    font-size: 12px;
+}
+
+section.main .formLogin .groupInput > input:focus
+section.main .formRecover .groupInput > input:focus{
+    border-color: #42A5F5;
+    background: transparent;
+}
+
+section.main .formLogin .groupInput > input::-webkit-input-placeholder,
+section.main .formLogin .groupInput > input:-moz-placeholder,
+section.main .formLogin .groupInput > input:-ms-input-placeholder,
+section.main .formRecover .groupInput > input::-webkit-input-placeholder,
+section.main .formRecover .groupInput > input:-moz-placeholder,
+section.main .formRecover .groupInput > input:-ms-input-placeholder{
+    color: #757575;
+    font-size: 14px;
+}
+
+section.main .formLogin .groupInput > .buttonLogin,
+section.main .formRecover .groupInput > .buttonLogin{
+    background: #0052CC;
+    border: 1px solid #0052CC;
+    color: #FFFFFF;
+    border-radius: 3px;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 14px;
+    outline: none;
+}
+
+section.main .formLogin .groupInput > .buttonLogin:hover,
+section.main .formRecover .groupInput > .buttonLogin:hover{
+    background: #1E88E5;
+    border-color: #1E88E5;
+    cursor: pointer;
+}
+
+section.main .formLogin .groupInput > .buttonLogin:active,
+section.main .formLogin .groupInput > .buttonLogin:focus,
+section.main .formRecover .groupInput > .buttonLogin:active,
+section.main .formRecover .groupInput > .buttonLogin:focus{
+    background: #0D47A1;
+    border-color: #0D47A1;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+}
+
+footer .forgetAccount{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+footer .credentials{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.messageError{
+    width: 100%;
+    padding: 8px 10px;
+    border: #F44336;
+    background: #D50000;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 3px;
+    font-weight: bold;
+    display: none;
+}

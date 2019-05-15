@@ -1,0 +1,112 @@
+.dataTables_info{
+	font-size: 13px;
+	color: #607D8B !important;
+	font-weight: bold;
+}
+
+.dataTables_paginate{
+	color: #607D8B !important;
+	font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+	color: #607D8B !important;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+.dataTables_wrapper .dataTables_paginate span .paginate_button{
+	color: #8B8B8B !important;
+	font-size: 11px;
+	font-weight: bold;
+	background: #0747A6 !important;
+	border-color: #0747A6 !important;
+	border-radius: 3px;
+}
+
+.dataTables_wrapper .dataTables_paginate span a.paginate_button.current{
+	color: #FFFFFF !important;
+	font-weight: bold; !important;
+	font-size: 11px;
+}
+
+.dataTables_wrapper .dataTables_paginate span a.paginate_button:hover{
+	color: #FFFFFF !important;
+	background-color: #1A237E !important;
+	border-color: #1A237E !important;
+}
+
+table.dataTable {
+	color: #607D8B !important;
+	font-size: 12px !important;
+	font-weight: bold;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  border-bottom: 1px solid #90A4AE !important;
+  font-size: 14px !important;
+}
+
+table.dataTable tbody th, 
+table.dataTable tbody td, 
+table.dataTable.display tbody th, 
+table.dataTable.display tbody td {
+  border-bottom: 1px solid #B0BEC5 !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+table.dataTable tbody tr {
+  background-color: transparent !important;
+}
+
+table.dataTable {
+  border-bottom: none !important;
+}
+
+.dataTables_filter{
+	float: left !important;
+	position: relative !important;
+	left: -15px;
+}
+
+.dataTables_filter .searchTables{
+	background: #CFD8DC;
+	color: #455A64;
+	position: relative;
+	left: 0px;
+	border-radius: 3px;
+	font-size: 14px;
+	padding: 5px 18px 5px 5px;
+	z-index: 0;
+}
+
+.dataTables_filter .iconSearch{
+	position: absolute;
+	color: #546E7A;
+	z-index: 1;
+	right: 8px;
+	top: 4px;
+	font-size: 16px;
+}
+
+.dataTables_filter .iconSearch:hover{
+	cursor: pointer;
+	color: #455A64;
+}
+
+.dataTables_length{
+	font-size: 13px;
+	color: #607D8B !important;
+	font-weight: bold;
+}
+
+.dataTables_length label select{
+	border: none;
+	background: none;
+	font-size: 13px;
+	color: #607D8B !important;
+	border: 1px solid #607D8B;
+	border-radius: 3px;
+}
